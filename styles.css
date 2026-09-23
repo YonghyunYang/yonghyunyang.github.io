@@ -70,3 +70,15 @@ body { margin: 0; color: var(--ink); background: #fff; }
   .page-footer { padding-top: 54px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.paper h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(49, 95, 120, .32);
+  text-underline-offset: 4px;
+}
+
+.paper h3 a:hover,
+.paper h3 a:focus-visible {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
